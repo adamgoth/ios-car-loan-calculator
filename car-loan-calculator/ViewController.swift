@@ -30,6 +30,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         principalAmountInput.text = "0"
         annualInterestInput.text = "0"
         monthsInput.text = "0"
+        
+        principalAmountInput.keyboardType = UIKeyboardType.NumberPad
+        annualInterestInput.keyboardType = UIKeyboardType.NumberPad
+        monthsInput.keyboardType = UIKeyboardType.NumberPad
     }
     
     func returnMonthlyPayment(principal: Double, annualInterest: Double, months: Double) -> Dictionary<String, Double> {
