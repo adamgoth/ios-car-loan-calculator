@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F93CB5751D7F74CA00E87D94 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F93CB5711D7F74CA00E87D94 /* NotoSans-Bold.ttf */; };
+		F93CB5761D7F74CA00E87D94 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F93CB5721D7F74CA00E87D94 /* NotoSans-BoldItalic.ttf */; };
+		F93CB5771D7F74CA00E87D94 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F93CB5731D7F74CA00E87D94 /* NotoSans-Italic.ttf */; };
+		F93CB5781D7F74CA00E87D94 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F93CB5741D7F74CA00E87D94 /* NotoSans-Regular.ttf */; };
 		F9FF09001D7B94B400E092A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FF08FF1D7B94B400E092A1 /* AppDelegate.swift */; };
 		F9FF09021D7B94B400E092A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FF09011D7B94B400E092A1 /* ViewController.swift */; };
 		F9FF09051D7B94B400E092A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FF09031D7B94B400E092A1 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F93CB5711D7F74CA00E87D94 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		F93CB5721D7F74CA00E87D94 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F93CB5731D7F74CA00E87D94 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		F93CB5741D7F74CA00E87D94 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		F9FF08FC1D7B94B400E092A1 /* car-loan-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "car-loan-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FF08FF1D7B94B400E092A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9FF09011D7B94B400E092A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F93CB5701D7F74BD00E87D94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F93CB5711D7F74CA00E87D94 /* NotoSans-Bold.ttf */,
+				F93CB5721D7F74CA00E87D94 /* NotoSans-BoldItalic.ttf */,
+				F93CB5731D7F74CA00E87D94 /* NotoSans-Italic.ttf */,
+				F93CB5741D7F74CA00E87D94 /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F9FF08F31D7B94B400E092A1 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +73,7 @@
 		F9FF08FE1D7B94B400E092A1 /* car-loan-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				F93CB5701D7F74BD00E87D94 /* Resources */,
 				F9FF08FF1D7B94B400E092A1 /* AppDelegate.swift */,
 				F9FF09011D7B94B400E092A1 /* ViewController.swift */,
 				F9FF09031D7B94B400E092A1 /* Main.storyboard */,
@@ -123,9 +143,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93CB5751D7F74CA00E87D94 /* NotoSans-Bold.ttf in Resources */,
 				F9FF090A1D7B94B400E092A1 /* LaunchScreen.storyboard in Resources */,
+				F93CB5761D7F74CA00E87D94 /* NotoSans-BoldItalic.ttf in Resources */,
+				F93CB5771D7F74CA00E87D94 /* NotoSans-Italic.ttf in Resources */,
 				F9FF09071D7B94B400E092A1 /* Assets.xcassets in Resources */,
 				F9FF09051D7B94B400E092A1 /* Main.storyboard in Resources */,
+				F93CB5781D7F74CA00E87D94 /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

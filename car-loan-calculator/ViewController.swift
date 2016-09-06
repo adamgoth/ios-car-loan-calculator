@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var basicContainerView: UIView!
+    @IBOutlet weak var advancedContainerView: UIView!
     @IBOutlet weak var principalAmountInput: UITextField!
     @IBOutlet weak var annualInterestInput: UITextField!
     @IBOutlet weak var monthsInput: UITextField!
@@ -34,6 +37,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         principalAmountInput.keyboardType = UIKeyboardType.NumberPad
         annualInterestInput.keyboardType = UIKeyboardType.NumberPad
         monthsInput.keyboardType = UIKeyboardType.NumberPad
+        
+        principalAmountInput.becomeFirstResponder()
     }
     
     func returnMonthlyPayment(principal: Double, annualInterest: Double, months: Double) -> Dictionary<String, Double> {
@@ -72,6 +77,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         formatter.numberStyle = .CurrencyStyle
         totalLoanAmountLbl.text = formatter.stringFromNumber(calc["totalLoan"]!)
         monthlyPaymentLbl.text = formatter.stringFromNumber(calc["payment"]!)
+    }
+    
+    @IBAction func indexChanged(sender: AnyObject) {
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            basicContainerView.hidden = false
+            advancedContainerView.hidden = true
+        case 1:
+            basicContainerView.hidden = true
+            advancedContainerView.hidden = false
+        default:
+            break
+        }
     }
     
     @IBAction func principalAmountChanged(sender: AnyObject) {
