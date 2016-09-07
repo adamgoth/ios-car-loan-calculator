@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var basicContainerView: UIView!
-    @IBOutlet weak var advancedContainerView: UIView!
+    @IBOutlet weak var advancedContainerView: UIScrollView!
     //basic outlets
     @IBOutlet weak var principalAmountInput: UITextField!
     @IBOutlet weak var annualInterestInput: UITextField!
@@ -86,6 +86,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         annualInterestInputAdv.keyboardType = UIKeyboardType.DecimalPad
         monthsInputAdv.keyboardType = UIKeyboardType.DecimalPad
         
+        advancedContainerView.contentSize = CGSizeMake(0, 520)
     }
     
     func calcPrincipal(carPrice: Double, tradeIn: Double, payoffAmount: Double, downPayment: Double, taxRate: Double) -> Double {

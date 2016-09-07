@@ -233,10 +233,10 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFw-cl-Qf4">
-                                <rect key="frame" x="20" y="104" width="560" height="320"/>
+                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEu-g8-gIT">
+                                <rect key="frame" x="20" y="104" width="560" height="400"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-8D-hw9">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-8D-hw9">
                                         <rect key="frame" x="135" y="8" width="290" height="253"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eRC-BW-Uly">
@@ -266,7 +266,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="74f-XD-apm">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="74f-XD-apm">
                                                 <rect key="frame" x="0.0" y="29" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trade-In Value:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drl-jV-ROg">
@@ -293,7 +293,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xnd-0T-J7Z">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xnd-0T-J7Z">
                                                 <rect key="frame" x="0.0" y="58" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payoff Amount:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CP-Em-HhC">
@@ -321,7 +321,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sC9-Dh-WdV">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sC9-Dh-WdV">
                                                 <rect key="frame" x="0.0" y="87" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Down Payment:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDG-yK-lC6">
@@ -348,7 +348,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wMi-hc-oNH">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wMi-hc-oNH">
                                                 <rect key="frame" x="0.0" y="116" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax Rate (%):" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4W-px-zdG">
@@ -375,7 +375,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cdk-E7-YgT">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cdk-E7-YgT">
                                                 <rect key="frame" x="0.0" y="145" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APR:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJu-hx-Bn0">
@@ -402,7 +402,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ce3-zK-8Q8">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ce3-zK-8Q8">
                                                 <rect key="frame" x="0.0" y="174" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Months:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQG-ud-UIZ">
@@ -429,7 +429,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Kd-zI-tzm">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Kd-zI-tzm">
                                                 <rect key="frame" x="0.0" y="203" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Loan Amount:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFl-zy-Agh">
@@ -454,7 +454,7 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-v7-HdH">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-v7-HdH">
                                                 <rect key="frame" x="0.0" y="232" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Payment:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOY-rB-FtP">
@@ -482,19 +482,12 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="4wN-0W-VWY"/>
-                                    <constraint firstItem="qtJ-8D-hw9" firstAttribute="top" secondItem="jFw-cl-Qf4" secondAttribute="top" constant="8" id="Btf-p8-ODI"/>
-                                    <constraint firstItem="qtJ-8D-hw9" firstAttribute="top" secondItem="jFw-cl-Qf4" secondAttribute="top" constant="8" id="Fmp-Cx-8lF"/>
-                                    <constraint firstItem="qtJ-8D-hw9" firstAttribute="centerX" secondItem="jFw-cl-Qf4" secondAttribute="centerX" id="QPS-u1-Bgi"/>
+                                    <constraint firstItem="qtJ-8D-hw9" firstAttribute="centerX" secondItem="VEu-g8-gIT" secondAttribute="centerX" id="8nU-Gj-kPP"/>
+                                    <constraint firstAttribute="height" constant="400" id="TDV-Go-mNd"/>
+                                    <constraint firstItem="qtJ-8D-hw9" firstAttribute="top" secondItem="VEu-g8-gIT" secondAttribute="top" constant="8" id="ftw-W1-CTp"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Btf-p8-ODI"/>
-                                    </mask>
-                                </variation>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -503,13 +496,12 @@
                             <constraint firstItem="q2o-iD-axv" firstAttribute="top" secondItem="G6j-vB-vpE" secondAttribute="bottom" constant="8" id="8gN-FG-7VV"/>
                             <constraint firstItem="Kt7-dl-4DD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BFj-lq-6pJ"/>
                             <constraint firstItem="q2o-iD-axv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DqS-5I-33f"/>
-                            <constraint firstItem="jFw-cl-Qf4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="E9Y-j9-2Dc"/>
-                            <constraint firstItem="jFw-cl-Qf4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E9t-hy-PbY"/>
+                            <constraint firstItem="VEu-g8-gIT" firstAttribute="top" secondItem="G6j-vB-vpE" secondAttribute="bottom" constant="8" id="Gip-GE-Tsj"/>
+                            <constraint firstItem="VEu-g8-gIT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KbM-lK-LWg"/>
                             <constraint firstItem="q2o-iD-axv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="N6R-fA-49S"/>
-                            <constraint firstItem="jFw-cl-Qf4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UOO-fN-Dy5"/>
                             <constraint firstItem="Kt7-dl-4DD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dhV-vH-yeq"/>
+                            <constraint firstItem="VEu-g8-gIT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nFG-m5-f6i"/>
                             <constraint firstItem="G6j-vB-vpE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="skV-cc-Un0"/>
-                            <constraint firstItem="jFw-cl-Qf4" firstAttribute="top" secondItem="G6j-vB-vpE" secondAttribute="bottom" constant="8" id="w1s-nB-eKx"/>
                             <constraint firstItem="G6j-vB-vpE" firstAttribute="top" secondItem="Kt7-dl-4DD" secondAttribute="bottom" constant="8" id="w59-jx-FN3"/>
                         </constraints>
                         <variation key="default">
@@ -519,7 +511,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="advancedContainerView" destination="jFw-cl-Qf4" id="DnF-Cw-v12"/>
+                        <outlet property="advancedContainerView" destination="VEu-g8-gIT" id="qv2-Ue-lZK"/>
                         <outlet property="annualInterestInput" destination="bNx-Xq-4xw" id="lCH-Yj-2KZ"/>
                         <outlet property="annualInterestInputAdv" destination="40j-V7-6eV" id="hEC-Z9-M20"/>
                         <outlet property="basicContainerView" destination="q2o-iD-axv" id="g5h-3e-bB9"/>
