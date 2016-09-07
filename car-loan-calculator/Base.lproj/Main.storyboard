@@ -8,10 +8,10 @@
     <customFonts key="customFonts">
         <mutableArray key="NotoSans-Bold.ttf">
             <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
         </mutableArray>
         <mutableArray key="NotoSans-Regular.ttf">
-            <string>NotoSans</string>
-            <string>NotoSans</string>
             <string>NotoSans</string>
             <string>NotoSans</string>
             <string>NotoSans</string>
@@ -86,8 +86,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2o-iD-axv">
                                 <rect key="frame" x="20" y="104" width="560" height="173"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dku-S2-kgU">
-                                        <rect key="frame" x="135" y="8" width="290" height="145"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dku-S2-kgU">
+                                        <rect key="frame" x="135" y="8" width="290" height="137"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="c6X-wt-tJC">
                                                 <rect key="frame" x="0.0" y="0.0" width="290" height="21"/>
@@ -116,7 +116,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gYg-9C-EiC">
-                                                <rect key="frame" x="0.0" y="31" width="290" height="21"/>
+                                                <rect key="frame" x="0.0" y="29" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APR:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-5U-gFI">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -142,7 +142,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9XG-DD-4pz">
-                                                <rect key="frame" x="0.0" y="62" width="290" height="21"/>
+                                                <rect key="frame" x="0.0" y="58" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Months:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvL-fB-Xcg">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -168,7 +168,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rui-Eb-m6o">
-                                                <rect key="frame" x="0.0" y="93" width="290" height="21"/>
+                                                <rect key="frame" x="0.0" y="87" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Loan Amount:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d51-vG-8Lx">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -193,7 +193,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="19m-Cf-2X9">
-                                                <rect key="frame" x="0.0" y="124" width="290" height="21"/>
+                                                <rect key="frame" x="0.0" y="116" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Payment:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXj-dJ-gn8">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -211,7 +211,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="Tzz-Yj-OD8"/>
                                                             <constraint firstAttribute="height" constant="21" id="iRm-fr-nw6"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -236,8 +236,8 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFw-cl-Qf4">
                                 <rect key="frame" x="20" y="104" width="560" height="320"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-8D-hw9">
-                                        <rect key="frame" x="135" y="8" width="290" height="269"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-8D-hw9">
+                                        <rect key="frame" x="135" y="8" width="290" height="253"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eRC-BW-Uly">
                                                 <rect key="frame" x="0.0" y="0.0" width="290" height="21"/>
@@ -266,8 +266,8 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="74f-XD-apm">
-                                                <rect key="frame" x="0.0" y="31" width="290" height="21"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="74f-XD-apm">
+                                                <rect key="frame" x="0.0" y="29" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trade-In Value:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drl-jV-ROg">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -293,8 +293,8 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xnd-0T-J7Z">
-                                                <rect key="frame" x="0.0" y="62" width="290" height="21"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xnd-0T-J7Z">
+                                                <rect key="frame" x="0.0" y="58" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payoff Amount:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CP-Em-HhC">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -321,8 +321,8 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sC9-Dh-WdV">
-                                                <rect key="frame" x="0.0" y="93" width="290" height="21"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sC9-Dh-WdV">
+                                                <rect key="frame" x="0.0" y="87" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Down Payment:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDG-yK-lC6">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -348,8 +348,8 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wMi-hc-oNH">
-                                                <rect key="frame" x="0.0" y="124" width="290" height="21"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wMi-hc-oNH">
+                                                <rect key="frame" x="0.0" y="116" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax Rate (%):" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4W-px-zdG">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -375,8 +375,8 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cdk-E7-YgT">
-                                                <rect key="frame" x="0.0" y="155" width="290" height="21"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cdk-E7-YgT">
+                                                <rect key="frame" x="0.0" y="145" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APR:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJu-hx-Bn0">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -402,8 +402,8 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ce3-zK-8Q8">
-                                                <rect key="frame" x="0.0" y="186" width="290" height="21"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ce3-zK-8Q8">
+                                                <rect key="frame" x="0.0" y="174" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Months:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQG-ud-UIZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -429,8 +429,8 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Kd-zI-tzm">
-                                                <rect key="frame" x="0.0" y="217" width="290" height="21"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Kd-zI-tzm">
+                                                <rect key="frame" x="0.0" y="203" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Loan Amount:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFl-zy-Agh">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -454,8 +454,8 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-v7-HdH">
-                                                <rect key="frame" x="0.0" y="248" width="290" height="21"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-v7-HdH">
+                                                <rect key="frame" x="0.0" y="232" width="290" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Payment:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOY-rB-FtP">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
@@ -473,7 +473,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="5WN-et-4j4"/>
                                                             <constraint firstAttribute="height" constant="21" id="emG-z8-shS"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
