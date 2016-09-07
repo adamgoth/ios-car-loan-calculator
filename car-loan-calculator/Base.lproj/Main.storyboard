@@ -258,6 +258,7 @@
                                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
+                                                            <action selector="carPriceChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="09d-Nn-wWO"/>
                                                             <action selector="principalAmountChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="T7C-wh-c9F"/>
                                                         </connections>
                                                     </textField>
@@ -285,6 +286,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
                                                             <action selector="principalAmountChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="bhI-Mv-dvL"/>
+                                                            <action selector="tradeInChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="1ad-bl-oZn"/>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
@@ -310,6 +312,7 @@
                                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
+                                                            <action selector="downPaymentChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="zaZ-Qi-76d"/>
                                                             <action selector="principalAmountChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="2kj-Gv-Qto"/>
                                                         </connections>
                                                     </textField>
@@ -337,6 +340,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
                                                             <action selector="principalAmountChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="qMO-yO-sgV"/>
+                                                            <action selector="taxRateChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="lZ7-ra-cxV"/>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
@@ -363,6 +367,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
                                                             <action selector="annualInterestChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="7vx-uI-p7P"/>
+                                                            <action selector="annualPercentageAdvChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="ELo-3b-URA"/>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
@@ -388,6 +393,7 @@
                                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
+                                                            <action selector="monthsAdvChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="9R2-gI-VAR"/>
                                                             <action selector="monthsChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="e0z-Dl-U09"/>
                                                         </connections>
                                                     </textField>
@@ -485,12 +491,20 @@
                     <connections>
                         <outlet property="advancedContainerView" destination="jFw-cl-Qf4" id="DnF-Cw-v12"/>
                         <outlet property="annualInterestInput" destination="bNx-Xq-4xw" id="lCH-Yj-2KZ"/>
+                        <outlet property="annualInterestInputAdv" destination="40j-V7-6eV" id="hEC-Z9-M20"/>
                         <outlet property="basicContainerView" destination="q2o-iD-axv" id="g5h-3e-bB9"/>
+                        <outlet property="carPriceInput" destination="vC1-YG-tij" id="1B6-bf-Yj3"/>
+                        <outlet property="downPaymentInput" destination="zaw-bi-DLw" id="2S8-g0-cny"/>
                         <outlet property="monthlyPaymentLbl" destination="UkQ-b2-T0g" id="Kav-Y7-aIW"/>
+                        <outlet property="monthlyPaymentLblAdv" destination="3Kz-DT-Lyu" id="sNL-Uw-viC"/>
                         <outlet property="monthsInput" destination="1ia-e8-Y2v" id="WNd-X5-Sll"/>
+                        <outlet property="monthsInputAdv" destination="jkc-Y0-2ov" id="U1G-mL-pYo"/>
                         <outlet property="principalAmountInput" destination="0fy-gv-Vjl" id="ved-LX-UaO"/>
                         <outlet property="segmentedControl" destination="G6j-vB-vpE" id="xcJ-ft-YRr"/>
+                        <outlet property="taxRateInput" destination="fOn-ti-ddK" id="D5M-9R-lof"/>
                         <outlet property="totalLoanAmountLbl" destination="Sy8-J9-wA1" id="vWA-kE-cuJ"/>
+                        <outlet property="totalLoanAmountLblAdv" destination="bX0-bW-xk6" id="FDk-dp-Ps4"/>
+                        <outlet property="tradeInInput" destination="vea-Rx-OaU" id="FkZ-rz-ihX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
