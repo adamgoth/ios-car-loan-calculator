@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //advanced outlets
     @IBOutlet weak var carPriceInput: UITextField!
     @IBOutlet weak var tradeInInput: UITextField!
+    @IBOutlet weak var payoffAmountInput: UITextField!
     @IBOutlet weak var downPaymentInput: UITextField!
     @IBOutlet weak var taxRateInput: UITextField!
     @IBOutlet weak var annualInterestInputAdv: UITextField!
@@ -37,6 +38,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //advanced properties
     var carPrice: Double = 0.0
     var tradeIn: Double = 0.0
+    var payoffAmount: Double = 0.0
     var downPayment: Double = 0.0
     var taxRate: Double = 0.0
     var annualInterestAdv: Double = 0.0
@@ -62,6 +64,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //initialize advanced view
         carPriceInput.delegate = self
         tradeInInput.delegate = self
+        payoffAmountInput.delegate = self
         downPaymentInput.delegate = self
         taxRateInput.delegate = self
         annualInterestInputAdv.delegate = self
@@ -69,6 +72,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         carPriceInput.text = "0"
         tradeInInput.text = "0"
+        payoffAmountInput.text = "0"
         downPaymentInput.text = "0"
         taxRateInput.text = "0"
         annualInterestInputAdv.text = "0"
@@ -76,6 +80,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         carPriceInput.keyboardType = UIKeyboardType.DecimalPad
         tradeInInput.keyboardType = UIKeyboardType.DecimalPad
+        payoffAmountInput.keyboardType = UIKeyboardType.DecimalPad
         downPaymentInput.keyboardType = UIKeyboardType.DecimalPad
         taxRateInput.keyboardType = UIKeyboardType.DecimalPad
         annualInterestInputAdv.keyboardType = UIKeyboardType.DecimalPad
@@ -83,11 +88,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func calcPrincipal(carPrice: Double, tradeIn: Double, downPayment: Double, taxRate: Double) -> Double {
+    func calcPrincipal(carPrice: Double, tradeIn: Double, payoffAmount: Double, downPayment: Double, taxRate: Double) -> Double {
         if taxRate > 0 {
-            return ((carPrice - tradeIn)*(1+(taxRate/100))) - downPayment
+            return ((carPrice - tradeIn)*(1+(taxRate/100))) - downPayment + payoffAmount
         } else {
-            return carPrice - tradeIn - downPayment
+            return carPrice - tradeIn - downPayment + payoffAmount
         }
     }
     
@@ -173,7 +178,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func carPriceChanged(sender: AnyObject) {
         if let carPriceInput = Double(carPriceInput.text!) {
             carPrice = carPriceInput
-            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, downPayment: downPayment, taxRate: taxRate)
+            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, payoffAmount: payoffAmount, downPayment: downPayment, taxRate: taxRate)
             calcAndUpdate(principal, annualInterest: annualInterestAdv, months: monthsAdv, basic: false)
         }
     }
@@ -181,7 +186,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func tradeInChanged(sender: AnyObject) {
         if let tradeInInput = Double(tradeInInput.text!) {
             tradeIn = tradeInInput
-            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, downPayment: downPayment, taxRate: taxRate)
+            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, payoffAmount: payoffAmount,  downPayment: downPayment, taxRate: taxRate)
+            calcAndUpdate(principal, annualInterest: annualInterestAdv, months: monthsAdv, basic: false)
+        }
+    }
+    
+    @IBAction func payoffAmountChanged(sender: AnyObject) {
+        if let payoffAmountInput = Double(payoffAmountInput.text!) {
+            payoffAmount = payoffAmountInput
+            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, payoffAmount: payoffAmount, downPayment: downPayment, taxRate: taxRate)
             calcAndUpdate(principal, annualInterest: annualInterestAdv, months: monthsAdv, basic: false)
         }
     }
@@ -189,7 +202,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func downPaymentChanged(sender: AnyObject) {
         if let downPaymentInput = Double(downPaymentInput.text!) {
             downPayment = downPaymentInput
-            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, downPayment: downPayment, taxRate: taxRate)
+            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, payoffAmount: payoffAmount, downPayment: downPayment, taxRate: taxRate)
             calcAndUpdate(principal, annualInterest: annualInterestAdv, months: monthsAdv, basic: false)
         }
     }
@@ -197,7 +210,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func taxRateChanged(sender: AnyObject) {
         if let taxRateInput = Double(taxRateInput.text!) {
             taxRate = taxRateInput
-            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, downPayment: downPayment, taxRate: taxRate)
+            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, payoffAmount: payoffAmount, downPayment: downPayment, taxRate: taxRate)
             calcAndUpdate(principal, annualInterest: annualInterestAdv, months: monthsAdv, basic: false)
         }
     }
@@ -205,7 +218,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func annualPercentageAdvChanged(sender: AnyObject) {
         if let annualInterestAdvInput = Double(annualInterestInputAdv.text!) {
             annualInterestAdv = annualInterestAdvInput
-            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, downPayment: downPayment, taxRate: taxRate)
+            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, payoffAmount: payoffAmount, downPayment: downPayment, taxRate: taxRate)
             calcAndUpdate(principal, annualInterest: annualInterestAdv, months: monthsAdv, basic: false)
         }
     }
@@ -213,7 +226,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func monthsAdvChanged(sender: AnyObject) {
         if let monthsAdvInput = Double(monthsInputAdv.text!) {
             monthsAdv = monthsAdvInput
-            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, downPayment: downPayment, taxRate: taxRate)
+            let principal = calcPrincipal(carPrice, tradeIn: tradeIn, payoffAmount: payoffAmount, downPayment: downPayment, taxRate: taxRate)
             calcAndUpdate(principal, annualInterest: annualInterestAdv, months: monthsAdv, basic: false)
         }
     }
